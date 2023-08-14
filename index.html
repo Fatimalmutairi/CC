@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fatima Almutairi</title>
+    <link rel="icon" href="images/3.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.2/plyr.css" />
+    <script src="https://cdn.plyr.io/3.7.2/plyr.polyfilled.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <!-- Header part -->
+    <header>
+        <div class="d-flex justify-content-between">
+            <p class="ms-3 mb-1 align-self-end pageTitle" style="font-size:18px;">
+                <b>Overview of the <wbr> Cloud Computing</b>
+            </p>
+            <a class="me-4 logo" href="index.html">
+                <p style="font-size:24px;">
+				<img src="images/logo.jpeg" alt="cloud computing"  height="50">
+                   
+                </p>
+            </a>
+        </div>
+        <div class="coloredLine"></div>
+    </header>
+    <!-- end of header -->
+
+
+    <!-- main content -->
+    <main>
+        <div class="row gx-0 gy-5">
+            <div class="col-lg-3 order-lg-1 order-2 leftSide">
+                <div class="row justify-content-center pb-1 gx-0 menuTitle">
+                    <div class="col-11">course menu</div>
+                    <div class="col-1 d-none d-lg-block" onclick="sideMenu()">
+                        <i class="bi bi-unlock-fill" id="lock"></i>
+                    </div>
+                </div>
+                <div id="sideMenu">
+                    <div class="row ps-3 menu">
+                        <ul class="pt-4">
+                            <div class="componentMenu" onclick="showOrHideMenu1()">
+                                <i class="bi bi-collection pe-1" id="collectionIcon"></i>
+                                Cloud Computing Services 
+                            </div>
+                            <div class="menuItems ps-3 pt-3" id="submenu1">
+                                <li class="pb-4 active" id="1" onclick="selectedItem('vid1')">
+                                    <i class="bi bi-play-circle pe-2 icon spinner-border-sm"></i>
+                                    <div class="tabsTitle">
+                                        Welcome!
+                                    </div>
+                                </li>
+                                <li class="pb-4" id="2" onclick="selectedItem('vid2')">
+                                    <i class="bi bi-play-circle pe-2 icon spinner-border-sm" id="icon1"></i>
+                                    <div class="tabsTitle">
+                                        Module Learning Objectives
+                                    </div>
+                                </li>
+                                <li class="pb-4" id="3" onclick="selectedItem('vid3')">
+                                    <i class="bi bi-play-circle pe-2 icon spinner-border-sm"></i>
+                                    <div class="tabsTitle">
+                                        What Is Cloud Computing? 
+                                    </div>
+                                </li>
+								<li class="pb-4" id="5" onclick="selectedItem('vid5')">
+                                    <i class="bi bi-play-circle pe-2 icon spinner-border-sm"></i>
+                                    <div class="tabsTitle">
+                                        Types of Cloud Computing Deployment Models
+                                    </div>
+                                </li>
+                                <li class="pb-4" id="4" onclick="selectedItem('vid4')">
+                                    <i class="bi bi-question-circle pe-2 icon spinner-border-sm"></i>
+                                    <div class="tabsTitle">
+                                        Quiz 1
+                                    </div>
+                                </li>
+                                <li class="pb-4" id="7" onclick="selectedItem('vid7')">
+                                    <i class="bi bi-play-circle pe-2 icon spinner-border-sm"></i>
+                                    <div class="tabsTitle">
+                                       Types of Cloud Computing Service Models
+                                    </div>
+                                </li>
+                                <li class="pb-4" id="6" onclick="selectedItem('vid6')">
+                                    <i class="bi bi-question-circle pe-2 icon spinner-border-sm"></i>
+                                    <div class="tabsTitle">
+                                        Quiz 2
+                                </li>
+                                
+                                <li class="pb-4" id="8" onclick="selectedItem('vid8')">
+                                    <div style="position:relative; display: inline-block;">
+                                        <i class=" bi bi-play-circle pe-2 icon spinner-border-sm"></i>
+                                    </div>
+                                    <div class="tabsTitle">
+                                        Amazon Web Services vs Microsoft Azure vs Google Cloud Platform 
+                                    </div>
+                                </li>
+                                <li class="pb-4" id="9" onclick="selectedItem('vid9')">
+                                    <i class="bi bi-question-circle pe-2 icon spinner-border-sm"></i>
+                                    <div class="tabsTitle">
+                                        Quiz 3
+                                    </div>
+                                </li>
+                                <li class="pb-4" id="10" onclick="selectedItem('vid10')">
+                                    <i class="bi bi-binoculars pe-2 icon spinner-border-sm"></i>
+                                    <div class="tabsTitle">
+                                        Cloude Services across the Kingdom
+                                    </div>
+                                </li>
+                                <li class="pb-4" id="11" onclick="selectedItem('vid11')">
+                                    <i class="bi bi-binoculars pe-2 icon spinner-border-sm"></i>
+                                    <div class="tabsTitle">
+                                        Cloud Computing Architecture
+                                    </div>
+                                </li>
+                                <li class="pb-4" id="12" onclick="selectedItem('vid12')">
+                                    <i class="bi bi-play-circle pe-2 icon spinner-border-sm"></i>
+                                    <div class="tabsTitle">
+                                        Google Cloud Services
+                                    </div>
+                                </li>
+                                <li class="pb-3" id="13" onclick="selectedItem('vid13')">
+                                    <i class="bi bi-play-circle pe-2 icon spinner-border-sm"></i>
+                                    <div class="tabsTitle">
+                                        Microsoft Azure Services 
+                                    </div>
+                                </li>
+								 <li class="pb-3" id="13" onclick="selectedItem('vid131')">
+                                    <i class="bi bi-play-circle pe-2 icon spinner-border-sm"></i>
+                                    <div class="tabsTitle">
+                                       Amazon Web Services 
+                                    </div>
+                                </li>
+                                <li class="pb-4" id="14" onclick="selectedItem('vid14')">
+                                    <i class="bi bi-question-circle pe-2 icon spinner-border-sm"></i>
+                                    <div class="tabsTitle">
+                                        Quiz 4
+                                    </div>
+                                </li>
+                                <li class="pb-4" id="15" onclick="selectedItem('vid15')">
+                                    <i class="bi bi-binoculars pe-2 icon spinner-border-sm"></i>
+                                    <div class="tabsTitle">
+                                        Cloud Computing Types
+                                    </div>
+                                </li>
+                                <li class="pb-3" id="16" onclick="selectedItem('vid16')">
+                                    <i class="bi bi-binoculars pe-2 icon spinner-border-sm"></i>
+                                    <div class="tabsTitle">
+                                       Construct Cloud Computing Architecture Model
+                                    </div>
+                                </li>
+                                <li class="pb-4" id="17" onclick="selectedItem('vid17')">
+                                    <i class="bi bi-play-circle pe-2 icon spinner-border-sm"></i>
+                                    <div class="tabsTitle">
+                                        Key Learning Points
+                                    </div>
+                                </li>
+                                <li id="18" onclick="selectedItem('vid18')">
+                                    <i class="bi bi-question-circle pe-2  icon spinner-border-sm"></i>
+                                    <div class="tabsTitle pb-3">
+                                        Quiz 5
+                                    </div>
+                                </li>
+                            </div>
+                        </ul>
+                        <ul>
+                            <div class="componentMenu pb-3" onclick="showOrHideMenu2()">
+                                <i class="bi bi-collection  pe-1" id="collectionIcon2"></i>
+                                Dummy Module 02
+                            </div>
+                            <div class="menuItems ps-3" id="submenu2">
+                                <li class="pb-4 " id="19" onclick="selectedItem('vid19')">
+                                    <i class="bi bi-play-circle pe-2 icon spinner-border-sm"></i>
+                                    Dummy Page 01
+                                </li>
+                                <li id="20" onclick="selectedItem('vid20')">
+                                    <i class="bi bi-play-circle pe-2 icon spinner-border-sm"></i>
+                                    Dummy Page 02
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-9 order-lg-2 order-1" id="rightSide">
+                <div class="videos" id="videos">
+                    <div id="content1"><video id="player1" playsinline controls></video>
+                    </div>
+                </div>
+                <div class="frameContainer">
+                    <iframe id="myIframe" width="100%" height="1000px"></iframe>
+                </div>
+                <button class="continueBtn" id="continueBtn" onclick="goNext()">Continue</button>
+            </div>
+        </div>
+        <!-- <div class="spinner-border" id="h"></div> -->
+    </main>
+    <!-- end of the main content -->
+    <script src="scripts/index.js"></script>
+</body>
+
+</html>

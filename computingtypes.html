@@ -1,0 +1,114 @@
+<html>
+<head>
+ <title>Cloud Computing Types</title>
+<link rel="stylesheet" href="styles/style.css">
+<style>
+a {
+    display: block;
+    float: left;
+    outline: 1px dashed gray;
+    
+	text-align: center;
+}
+ a:link {
+      text-decoration: none;
+	  font-weight: bold;
+}
+
+a:visited {
+      text-decoration: none;
+	  font-weight: bold;
+}
+
+a:hover {
+      text-decoration: none;
+	  font-weight: bold;
+	  
+}
+
+a:active {
+      text-decoration: none;
+	  font-weight: bold;
+}
+</style>
+<script language="JavaScript">
+function getDetails(obj){
+clickX = window.event.x-obj.offsetLeft;
+clickY = window.event.y-obj.offsetTop;
+ let txt1 = document.getElementById("txt1");
+ let txt2 = document.getElementById("txt2");
+let txt3 = document.getElementById("txt3");
+let txt4 = document.getElementById("txt4");
+let txt5 = document.getElementById("txt5");
+    if((clickX>=100&&clickX<=200)&&(clickY>=100&&clickY<=200))
+    {
+    txt1.innerHTML = "Private/Internal";
+    } 
+	else
+	 txt1.innerHTML = "";
+	 
+	 if((clickX>=300&&clickX<=400)&&(clickY>=100&&clickY<=200))
+    {
+    txt2.innerHTML = "Hybrid";
+    } 
+	else
+	 txt2.innerHTML = "";
+	 
+	  if((clickX>=350&&clickX<=400)&&(clickY>=200&&clickY<=300))
+    {
+    txt3.innerHTML = "Public/<br>External";
+    } 
+	else
+	 txt3.innerHTML = "";
+	 
+	  if((clickX>=10&&clickX<=200)&&(clickY>=500&&clickY<=600))
+    {
+    txt4.innerHTML = "On premises/Internal";
+    } 
+	else
+	 txt4.innerHTML = ""; 
+	 if((clickX>=300&&clickX<=500)&&(clickY>=500&&clickY<=600))
+    {
+    txt5.innerHTML = "Off premises/Third party";
+    } 
+	else
+	 txt5.innerHTML = "";
+}
+
+</script>
+</head>
+<body>
+<img src="images/cc.png" onMousemove="getDetails(this)"  id="myimg" height="600" width="900" />
+<a style="z-index:3; position: absolute;
+left: 140px;
+top: 150px;
+font-family: 'Times New Roman', Times, serif;
+font-size:20px;width: 15%;"id='txt1'href=""></a>
+
+<a style="z-index:3; position: absolute;
+left: 370px;
+top: 110;
+font-family: 'Times New Roman', Times, serif;
+font-size:25px;width: 11%;"id='txt2'href=""></a>
+
+
+<a style="z-index:3; position: absolute;
+left: 415px;
+top: 220;
+font-family: 'Times New Roman', Times, serif;
+font-size:20px;width: 9%;"id='txt3'href=""></a>
+
+
+<a style="z-index:3; position: absolute;
+left: 15px;
+top: 565px;
+font-family: 'Times New Roman', Times, serif;
+font-size:30px;width: 30%;"id='txt4'href=""></a>
+
+<a style="z-index:3; position: absolute; 
+left: 430px;
+top: 560px;
+font-family: 'Times New Roman', Times, serif;
+font-size:30px;width: 40%;"id='txt5'href=""></a>
+</body>
+</html>
